@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'navbar';
+@import 'media-queries';
 
 * {
   margin: 0%;
@@ -15,9 +16,31 @@ html {
 }
 
 //Header
-header {
+.header {
   background: url(/images/mobile/image-header.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
+  width: 100%;
+  text-align: center;
+
+  &__text {
+    font-size: 3rem;
+    font-family: $ff-fraunces;
+    font-weight: $fw-bold;
+    margin: 1.15em 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  @include desktop {
+    background: url(/images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    &__text {
+      margin-bottom: 1.85em;
+    }
+  }
 }
+
+//main content
