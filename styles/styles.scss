@@ -1,7 +1,7 @@
 @import 'variables';
-@import 'navbar';
 @import 'media-queries';
-
+@import 'navbar';
+@import 'main-content';
 * {
   margin: 0%;
   box-sizing: border-box;
@@ -15,7 +15,6 @@ html {
   font-size: $fs-body;
 }
 
-//Header
 .header {
   background: url(/images/mobile/image-header.jpg);
   background-position: center;
@@ -43,4 +42,5 @@ html {
   }
 }
 
-//main content
+main {
+}

@@ -72,6 +72,107 @@
   }
 }
 
+.main-content .agency-purpose,
+.main-content .agency-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main-content .agency-purpose__image,
+.main-content .agency-offer__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.main-content .agency-purpose__article,
+.main-content .agency-offer__article {
+  padding: 4em 2em;
+}
+
+.main-content .agency-purpose__article-title,
+.main-content .agency-offer__article-title {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.main-content .agency-purpose__article-information,
+.main-content .agency-offer__article-information {
+  color: #818498;
+  letter-spacing: 0.8px;
+  margin-bottom: 2em;
+}
+
+.main-content .agency-purpose__article-link,
+.main-content .agency-offer__article-link {
+  text-decoration: none;
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+}
+
+.main-content .agency-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content .agency-services__graphic-design {
+  background: url(/images/mobile/image-graphic-design.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #25564b;
+}
+
+.main-content .agency-services__photography {
+  background: url(/images/mobile/image-photography.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #19536b;
+}
+
+.main-content .agency-services__graphic-design, .main-content .agency-services__photography {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+}
+
+.main-content .agency-services__graphic-design-title, .main-content .agency-services__photography-title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.main-content .agency-services__graphic-design-text, .main-content .agency-services__photography-text {
+  margin: 1.4em;
+  margin-bottom: 4em;
+}
+
+.main-content .agency-services .agency-testimonials__title {
+  margin: 2em;
+}
+
 * {
   margin: 0%;
   -webkit-box-sizing: border-box;

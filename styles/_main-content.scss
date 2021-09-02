@@ -1,0 +1,77 @@
+@import './variables';
+@import './media-queries';
+
+.main-content {
+  .agency-purpose,
+  .agency-offer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__image {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &__article {
+      padding: 4em 2em;
+
+      &-title {
+        font-family: $ff-fraunces;
+        color: $very-dark-desaturated-blue;
+        font-size: 2rem;
+        margin-bottom: 1em;
+      }
+      &-information {
+        color: $dark-grayish-blue;
+        letter-spacing: 0.8px;
+        margin-bottom: 2em;
+      }
+      &-link {
+        text-decoration: none;
+        color: $very-dark-desaturated-blue;
+        font-family: $ff-fraunces;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .agency-services {
+    display: flex;
+    flex-direction: column;
+    &__graphic-design {
+      background: url(/images/mobile/image-graphic-design.jpg);
+      background-position: center;
+      background-size: cover;
+      color: $dark-desatured-cyan;
+    }
+    &__photography {
+      background: url(/images/mobile/image-photography.jpg);
+      background-position: center;
+      background-size: cover;
+      color: $dark-blue;
+    }
+    &__graphic-design,
+    &__photography {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: center;
+      &-title {
+        font-family: $ff-fraunces;
+        font-weight: $fw-black;
+        font-size: 2rem;
+      }
+      &-text {
+        margin: 1.4em;
+        margin-bottom: 4em;
+      }
+    }
+    .agency-testimonials {
+      &__title {
+        margin: 2em;
+      }
+    }
+  }
+}
