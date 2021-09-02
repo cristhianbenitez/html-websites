@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'media-queries';
+
+//Navbar Styles
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  position: relative;
+  font-size: 0.85rem;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__list {
+    display: none;
+    justify-content: space-between;
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
+
+    &-item {
+      text-decoration: none;
+      color: $white;
+      margin-left: 3em;
+    }
+  }
+  #button {
+    padding: 1em 1.7em;
+    background-color: $white;
+    border-radius: 50px;
+    color: $dark-blue;
+    font-family: $ff-fraunces;
+    font-weight: $fw-bold;
+    border-style: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $white;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__menu {
+    cursor: pointer;
+    @include desktop {
+      display: none;
+    }
+  }
+}
