@@ -34,6 +34,28 @@
         text-transform: uppercase;
       }
     }
+    @include desktop {
+      flex-direction: row;
+
+      .agency-offer__image {
+        background: url(/images/desktop/image-transform.jpg);
+        width: 50%;
+        order: 0;
+      }
+      .agency-purpose__image {
+        background: url(/images/mobile/image-stand-out.jpg);
+        order: 1;
+        width: 50%;
+      }
+      &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: 0 4.5em;
+        text-align: left;
+      }
+    }
   }
 
   .agency-services {
@@ -66,6 +88,18 @@
       &-text {
         margin: 1.4em;
         margin-bottom: 4em;
+      }
+    }
+    @include desktop {
+      flex-direction: row;
+      &__graphic-design {
+        width: 50%;
+        background: url(/images/desktop/image-graphic-design.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      &__photography {
+        width: 50%;
       }
     }
   }
