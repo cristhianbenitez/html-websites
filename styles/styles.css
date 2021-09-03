@@ -169,8 +169,55 @@
   margin-bottom: 4em;
 }
 
-.main-content .agency-services .agency-testimonials__title {
-  margin: 2em;
+.main-content .agency-testimonials__title {
+  margin: 3em 0;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+}
+
+.main-content .agency-testimonials__item {
+  text-align: center;
+}
+
+.main-content .agency-testimonials__item-image {
+  margin-top: 4em;
+  border-radius: 100%;
+  width: 80px;
+}
+
+.main-content .agency-testimonials__item-text {
+  margin: 1.7em;
+  font-size: 1.1rem;
+}
+
+.main-content .agency-testimonials__item-name {
+  font-family: "Fraunces", serif;
+  margin: 0.5em;
+  color: #23303e;
+}
+
+.main-content .agency-testimonials__item-occupation {
+  font-size: 0.9rem;
+  color: #a7abae;
+}
+
+.main-content .agency-images {
+  margin-top: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.main-content .agency-images__item {
+  width: 50%;
 }
 
 * {
