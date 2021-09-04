@@ -219,13 +219,16 @@
             flex-direction: row;
   }
   .main-content .agency-services__graphic-design {
-    width: 50%;
     background: url(/images/desktop/image-graphic-design.jpg);
-    background-position: center;
-    background-size: cover;
   }
   .main-content .agency-services__photography {
+    background: url(/images/desktop/image-photography.jpg);
+  }
+  .main-content .agency-services__graphic-design, .main-content .agency-services__photography {
+    height: 600px;
     width: 50%;
+    background-position: top;
+    background-size: cover;
   }
 }
 
@@ -264,6 +267,14 @@
 .main-content .agency-testimonials__item-occupation {
   font-size: 0.9rem;
   color: #a7abae;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content .agency-testimonials__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .main-content .agency-images {

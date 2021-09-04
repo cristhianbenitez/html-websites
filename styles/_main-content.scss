@@ -93,13 +93,17 @@
     @include desktop {
       flex-direction: row;
       &__graphic-design {
-        width: 50%;
         background: url(/images/desktop/image-graphic-design.jpg);
-        background-position: center;
-        background-size: cover;
       }
       &__photography {
+        background: url(/images/desktop/image-photography.jpg);
+      }
+      &__graphic-design,
+      &__photography {
+        height: 600px;
         width: 50%;
+        background-position: top;
+        background-size: cover;
       }
     }
   }
@@ -135,6 +139,11 @@
       &-occupation {
         font-size: 0.9rem;
         color: $grayish-blue;
+      }
+    }
+    @include desktop {
+      &__container {
+        display: flex;
       }
     }
   }
