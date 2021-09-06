@@ -1,0 +1,30 @@
+@import './variables';
+@import './media-queries';
+
+.footer-content {
+  background-color: $dark-light-cyan;
+  text-align: center;
+  width: 100%;
+
+  &__logo {
+    width: 200px;
+    padding-top: 3.5em;
+  }
+  &__list {
+    margin-top: 1.5em;
+  }
+  &__list-item {
+    font-size: 1.3rem;
+    color: $dark-desatured-cyan;
+    text-decoration: none;
+  }
+  &__list-item:not(:first-child) {
+    margin-left: 1.4em;
+  }
+  &__icons {
+    padding: 4em 0;
+  }
+  &__icon {
+    margin-left: 1.2em;
+  }
+}
