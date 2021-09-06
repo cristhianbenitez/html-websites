@@ -25,10 +25,10 @@ html {
   text-align: center;
 
   &__text {
-    font-size: 3rem;
+    font-size: 2.5em;
     font-family: $ff-fraunces;
     font-weight: $fw-bold;
-    margin: 1.15em 0;
+    margin: 2.255em 0;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: $white;
@@ -38,12 +38,18 @@ html {
     background-position: center;
     background-size: cover;
     &__text {
+      font-size: 3em;
+      margin: 1.7em 0;
       margin-bottom: 1.85em;
     }
   }
 }
 
 main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+footer {
   max-width: 1440px;
   margin: 0 auto;
 }
