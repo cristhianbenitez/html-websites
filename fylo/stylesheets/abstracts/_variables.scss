@@ -1,0 +1,63 @@
+/// Regular font family
+/// @type List
+$main-font: 'Open Sans', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$head-font: 'Raleway', sans-serif !default;
+
+/// Copy text color
+
+/// @type Color
+$text-color: hsl(0, 0%, 100%) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: hsl(0, 0%, 100%) !default;
+
+/// Cyan (inside call-to-action gradient)
+/// @type Color
+$blue: hsl(198, 60%, 50%) !default;
+
+/// Blue (inside call-to-action gradient)
+/// @type Color
+$cyan: hsl(176, 68%, 64%) !default;
+
+/// Light Red (error)
+/// @type Color
+$light-red: hsl(0, 100%, 63%) !default;
+
+// Background Colors
+
+// Dark Blue (intro and email sign up background):
+/// @type Color
+$intro-bg: hsl(217, 28%, 15%) !default;
+
+// Dark Blue (main background):
+/// @type Color
+$main-bg: hsl(218, 28%, 13%) !default;
+
+// Dark Blue (footer background):
+/// @type Color
+$footer-bg: hsl(216, 53%, 9%) !default;
+
+// Dark Blue (cta background):
+/// @type Color
+$testimonials-bg: hsl(219, 30%, 18%) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1440px !default;
+
+//  Breakpoints
+$breakpoints: (
+  'small': 550px,
+  'medium': 768px,
+  'large': 1024px
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

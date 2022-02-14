@@ -1,0 +1,31 @@
+.navbar {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5em;
+  &__logo {
+    width: 8em;
+  }
+  &__list {
+    font-size: 0.75rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 90%;
+  }
+  @include respond-to('small') {
+    padding: 2em 4em;
+    &__list {
+      width: 40%;
+    }
+  }
+  @include respond-to('medium') {
+    padding: 2em 4em;
+    &__list {
+      width: 25%;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2em 4em;
+  margin-top: 16em;
+  @include respond-to('large') {
+    margin-top: 12em;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  @include respond-to('large') {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    & .contact {
+      width: 50%;
+    }
+    & .footer-nav {
+      width: 20%;
+    }
+    & .attribution {
+      width: 5%;
+    }
+  }
+}
+
+.footer__logo {
+  padding-left: 0.5em;
+  width: 10em;
+  margin-bottom: 2em;
+}
+
+.contact {
+  margin-bottom: 5em;
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &-text {
+      width: 100%;
+      display: flex;
+    }
+    &-icon {
+      width: 1rem;
+      height: 100%;
+    }
+  }
+
+  @include respond-to('large') {
+    display: flex;
+    margin: 0;
+    & .first {
+      padding-right: 4em;
+    }
+    &__item {
+      margin: 0;
+    }
+  }
+}
+
+.footer-nav {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 4em;
+  &__list {
+    margin: 0;
+    padding: 0;
+    &-item {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+  @include respond-to('large') {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 0;
+    & ul {
+      margin: 0;
+    }
+  }
+}
+
+.attribution {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  & .social-icons {
+    width: 1.5rem;
+  }
+  & .twitter > path:hover {
+    fill: #62dfd7;
+  }
+  & .github > path:hover {
+    fill: black;
+  }
+
+  @include respond-to('large') {
+    width: fit-content;
+    margin: 0;
+    & .social-icons {
+      width: 1.5em;
+    }
+  }
+}

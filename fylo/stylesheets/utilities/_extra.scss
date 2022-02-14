@@ -1,0 +1,30 @@
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.quote {
+  width: 1.5em;
+  margin-left: 0.5em;
+  @include respond-to('large') {
+    width: 3rem;
+    position: absolute;
+    top: -28px;
+    left: 0;
+    margin-left: 11.25em;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.wrapper {
+  display: flex;
+}

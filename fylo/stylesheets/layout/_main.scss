@@ -1,0 +1,147 @@
+main {
+  background-color: $main-bg;
+  padding-bottom: 17em;
+  @include respond-to('large') {
+    padding-bottom: 13.5em;
+  }
+}
+
+.intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14em;
+  &__image {
+    z-index: 2;
+    font-family: $head-font;
+    margin-bottom: 2.5em;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4em;
+  }
+  &__button {
+    padding: 1.25em 7em;
+    background: linear-gradient(60deg, $cyan, $blue 50%);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  @include respond-to('large') {
+    &__image {
+      width: 70%;
+    }
+    & div:nth-child(2) {
+      padding: 0 16em;
+    }
+  }
+}
+.services {
+  margin-bottom: 8em;
+  &__item {
+    text-align: center;
+    margin-bottom: 6em;
+    &-image {
+      width: 15%;
+      margin-bottom: 1em;
+    }
+    &-text {
+      font-size: 0.75rem;
+    }
+  }
+  @include respond-to('large') {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      width: 45%;
+      padding: 0 4em;
+    }
+  }
+}
+.about {
+  margin-bottom: 10em;
+  &__image {
+    margin-bottom: 2em;
+  }
+  &__title {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+  }
+  &__text {
+    margin-bottom: 1.5em;
+  }
+  &__link {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: $cyan;
+    border-bottom: 1px solid $cyan;
+    padding-bottom: 0.5em;
+    & img {
+      width: 1rem;
+    }
+
+    &:hover {
+      color: white;
+      border-bottom-color: white;
+    }
+  }
+
+  @include respond-to('large') {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    &__image {
+      width: 50%;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      margin-right: 6em;
+    }
+  }
+}
+.testimonials {
+  &__voucher {
+    padding: 1.5em;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    background-color: $intro-bg;
+    z-index: 2;
+    &-text {
+      line-height: 25px;
+    }
+    &-information {
+      display: flex;
+      gap: 10px;
+    }
+    &-photo {
+      border-radius: 100%;
+      width: 2.2em;
+    }
+    &-name {
+      font-weight: 700;
+    }
+    &-profession {
+      font-size: 0.6rem;
+      opacity: 85%;
+    }
+  }
+  margin-bottom: 5em;
+  @include respond-to('large') {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+  }
+}

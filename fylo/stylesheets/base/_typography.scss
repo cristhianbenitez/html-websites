@@ -1,0 +1,15 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 14px $main-font;
+}
+
+p {
+  line-height: 20px;
+}
+
+.navbar {
+  font: normal $head-font;
+}
