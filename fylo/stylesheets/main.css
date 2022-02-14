@@ -367,20 +367,6 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'Raleway';
-  src: url(https://fonts.google.com/specimen/Raleway);
-  font-weight: 400, 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url(https://fonts.google.com/specimen/Open+Sans);
-  font-weight: 400, 700;
-  font-display: swap;
-}
-
 /**
  * Basic typography style for copy text
  */
@@ -398,7 +384,119 @@ p {
 }
 
 header {
-  background: #1c2431;
+  position: relative;
+  padding-bottom: 12em;
+}
+
+.curvy-background {
+  background-image: url(../images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .curvy-background {
+    top: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .curvy-background {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-position: bottom;
+    top: 0;
+  }
+}
+
+.secondary-background {
+  background-color: #181f2a;
+  position: absolute;
+  width: 100%;
+  height: 41%;
+  bottom: 0;
+  padding-bottom: 14em;
+}
+
+@media (min-width: 768px) {
+  .secondary-background {
+    height: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .secondary-background {
+    display: none;
+  }
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.intro__image {
+  z-index: 2;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 2.5em;
+}
+
+.intro__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.intro__text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 4em;
+}
+
+.intro__button {
+  padding: 1.25em 0;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(60deg, #65e2d9, #339ecc 50%);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .intro div:nth-child(2) {
+    padding: 0 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro__image {
+    width: 50%;
+  }
+  .intro div:nth-child(2) {
+    padding: 0 16em;
+  }
 }
 
 footer {
@@ -597,55 +695,6 @@ main {
   }
 }
 
-.intro {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 14em;
-}
-
-.intro__image {
-  z-index: 2;
-  font-family: "Raleway", sans-serif;
-  margin-bottom: 2.5em;
-}
-
-.intro__title {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.intro__text {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 4em;
-}
-
-.intro__button {
-  padding: 1.25em 7em;
-  background: linear-gradient(60deg, #65e2d9, #339ecc 50%);
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-@media (min-width: 1024px) {
-  .intro__image {
-    width: 70%;
-  }
-  .intro div:nth-child(2) {
-    padding: 0 16em;
-  }
-}
-
 .services {
   margin-bottom: 8em;
 }
@@ -810,6 +859,8 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 2.5em;
+  z-index: 2;
+  position: relative;
 }
 
 .navbar__logo {
@@ -826,6 +877,14 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   opacity: 90%;
+}
+
+.navbar__list-item:hover {
+  text-decoration: underline;
+}
+
+.navbar__list-item--active {
+  font-weight: 700;
 }
 
 @media (min-width: 550px) {
@@ -851,8 +910,8 @@ main {
   margin-top: 4em;
   padding: 2em 2.75em;
   left: 20px;
-  -webkit-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 4px 4px 6px 2px #0000004d;
+          box-shadow: 4px 4px 6px 2px #0000004d;
   border-radius: 6px;
   text-align: center;
   height: -webkit-fit-content;
@@ -968,6 +1027,9 @@ main {
 }
 
 .center {
+  width: 100%;
+  right: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -10,6 +10,11 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Fylo</title>
   </head>
   <body>
@@ -20,15 +25,14 @@
         </div>
         <ul class="navbar__list">
           <li class="navbar__list-item navbar__list-item--active">
-            <a href="">Features</a>
+            <a href="#">Features</a>
           </li>
-          <li class="navbar__list-item"><a href="">Team</a></li>
-          <li class="navbar__list-item"><a href="">Sign In</a></li>
+          <li class="navbar__list-item"><a href="#">Team</a></li>
+          <li class="navbar__list-item"><a href="#">Sign In</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <!-- <div class="curvy-background"></div> -->
+      <div class="curvy-background"></div>
+      <div class="secondary-background"></div>
       <section class="intro container">
         <div class="intro__image">
           <img src="images/illustration-intro.png" alt="files" />
@@ -45,6 +49,9 @@
           <a href="" class="intro__button"> Get Started</a>
         </div>
       </section>
+    </header>
+
+    <main>
       <section class="services container">
         <div class="services__item">
           <img
@@ -193,7 +200,7 @@
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-          <form>
+          <form id="form">
             <input
               type="email"
               id="email"
@@ -297,4 +304,5 @@
       </div>
     </footer>
   </body>
+  <script src="javascript/index.js"></script>
 </html>

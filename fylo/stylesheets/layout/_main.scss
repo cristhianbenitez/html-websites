@@ -6,42 +6,6 @@ main {
   }
 }
 
-.intro {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 14em;
-  &__image {
-    z-index: 2;
-    font-family: $head-font;
-    margin-bottom: 2.5em;
-  }
-  &__title {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  &__text {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 4em;
-  }
-  &__button {
-    padding: 1.25em 7em;
-    background: linear-gradient(60deg, $cyan, $blue 50%);
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  @include respond-to('large') {
-    &__image {
-      width: 70%;
-    }
-    & div:nth-child(2) {
-      padding: 0 16em;
-    }
-  }
-}
 .services {
   margin-bottom: 8em;
   &__item {

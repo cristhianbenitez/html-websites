@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.5em;
+  z-index: 2;
+  position: relative;
   &__logo {
     width: 8em;
   }
@@ -15,6 +17,14 @@
     display: flex;
     justify-content: space-between;
     opacity: 90%;
+    &-item {
+      &:hover {
+        text-decoration: underline;
+      }
+      &--active {
+        font-weight: 700;
+      }
+    }
   }
   @include respond-to('small') {
     padding: 2em 4em;
