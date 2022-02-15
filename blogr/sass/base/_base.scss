@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  background-color: $intro-bg;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 16px $main-font;
+}
+
+p {
+  line-height: 20px;
+}
