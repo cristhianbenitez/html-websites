@@ -1,11 +1,72 @@
-/**
- * Basic typography style for copy text
- */
 body {
-  color: $text-color;
-  font: normal 16px $main-font;
+  font: normal 16px $ubuntu-font;
+  color: $dark-greyish;
 }
 
-p {
-  line-height: 20px;
+h2 {
+  color: $dblue-text;
+}
+main {
+  line-height: 25px;
+  text-align: center;
+}
+.call-to-action {
+  text-align: center;
+  &__headline {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $main-text;
+  }
+  &__text {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  &__buttons {
+    font-size: 1.125rem;
+    font-weight: 700;
+    a:first-child {
+      color: $lred-text;
+      background-color: $main-text;
+    }
+  }
+}
+
+.introduction {
+  &__heading {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: $dblue-text;
+  }
+  &__benefits {
+    &-title {
+    }
+    &-text {
+    }
+  }
+}
+
+.presentation {
+  color: $main-text;
+  &__title {
+    line-height: 50px;
+    font-size: 2.25rem;
+    color: $main-text;
+    font-weight: 500;
+  }
+  &__text {
+    line-height: 30px;
+  }
+}
+
+.footer {
+  &__navigation {
+    text-align: center;
+    & ul {
+      margin: 0;
+      padding: 0;
+      & > li:first-child {
+        font-weight: 600;
+      }
+    }
+  }
 }

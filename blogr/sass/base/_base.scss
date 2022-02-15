@@ -1,12 +1,15 @@
 html {
   box-sizing: border-box;
-  background-color: $intro-bg;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+header {
+  color: $main-text;
 }
 
 img {
@@ -18,6 +21,6 @@ ul {
 }
 
 a {
-  color: $brand-color;
+  color: $main-text;
   text-decoration: none;
 }
