@@ -37,20 +37,20 @@ main {
         }
       }
     }
-  }
-  &__buttons {
-    font-weight: 500;
-    font-size: 1.05rem;
-    & > a:first-child:hover {
-      color: $main-text;
-      background: linear-gradient(to right, $xlred, $lred);
-    }
-    & > a:last-child {
-      background: linear-gradient(to right, $xlred, $lred);
-      color: $main-text;
-      &:hover {
-        color: $dblue-text;
-        background: $main-text;
+    &-buttons {
+      font-weight: 500;
+      font-size: 1.05rem;
+      & > a:first-child:hover {
+        color: $main-text;
+        background: linear-gradient(to right, $xlred, $lred);
+      }
+      & > a:last-child {
+        background: linear-gradient(to right, $xlred, $lred);
+        color: $main-text;
+        &:hover {
+          color: $dblue-text;
+          background: $main-text;
+        }
       }
     }
   }
