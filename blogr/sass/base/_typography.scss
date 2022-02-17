@@ -10,6 +10,52 @@ main {
   line-height: 25px;
   text-align: center;
 }
+
+.navigation {
+  &__list {
+    text-align: center;
+    &-item {
+      & > div {
+        color: $dblue-text;
+        font-size: 1.25rem;
+        font-weight: 500;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+      &--dropdown-open > div {
+        color: $dark-blue;
+      }
+      &-dropdown {
+        background-color: $grayish-blue;
+        & * {
+          color: $dark-greyish;
+          font-weight: 600;
+          &:hover {
+            color: $dblue-text;
+          }
+        }
+      }
+    }
+  }
+  &__buttons {
+    font-weight: 500;
+    font-size: 1.05rem;
+    & > a:first-child:hover {
+      color: $main-text;
+      background: linear-gradient(to right, $xlred, $lred);
+    }
+    & > a:last-child {
+      background: linear-gradient(to right, $xlred, $lred);
+      color: $main-text;
+      &:hover {
+        color: $dblue-text;
+        background: $main-text;
+      }
+    }
+  }
+}
+
 .call-to-action {
   text-align: center;
   &__headline {

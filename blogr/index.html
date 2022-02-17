@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="sass/main.css" />
     <title>Blogr</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
@@ -20,46 +24,71 @@
           <div class="brand__logo">
             <img src="images/logo.svg" alt="blogr logo" />
           </div>
-          <div class="navigation__menu--active">
+          <div class="navigation__menu">
             <div>
-              <ul>
-                <li class="navigation__item">
-                  <a href="">Product</a>
-                  <ul class="navigation__item-dropdown">
-                    <li>Overview</li>
-                    <li>Pricing</li>
-                    <li>Marketplace</li>
-                    <li>Features</li>
-                    <li>Integrations</li>
+              <ul class="navigation__list">
+                <li
+                  class="navigation__list-item navigation__list-item--dropdown-open"
+                >
+                  <div>
+                    <span>Product</span>
+                    <img
+                      src="images/icon-arrow-dark.svg"
+                      alt="arrow"
+                      class="navigation__list-item-arrow"
+                    />
+                  </div>
+                  <ul class="navigation__list-item-dropdown">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Integrations</a></li>
                   </ul>
                 </li>
-                <li class="navigation__item">
-                  <a href="">Company</a>
-                  <ul class="navigation__item-dropdown">
-                    <li>About</li>
-                    <li>Team</li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                    <li></li>
+                <li class="navigation__list-item">
+                  <div>
+                    <span>Company</span>
+                    <img
+                      src="images/icon-arrow-dark.svg"
+                      alt="arrow"
+                      class="navigation__list-item-arrow"
+                    />
+                  </div>
+                  <ul class="navigation__list-item-dropdown">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
                   </ul>
                 </li>
-                <li class="navigation__item">
-                  <a href="">Connect</a>
-                  <ul class="navigation__item-dropdown">
-                    <li>Contact</li>
-                    <li>Newsletter</li>
-                    <li>LinkedIn</li>
+                <li class="navigation__list-item">
+                  <div>
+                    <span>Connect</span>
+                    <img
+                      src="images/icon-arrow-dark.svg"
+                      alt="arrow"
+                      class="navigation__list-item-arrow"
+                    />
+                  </div>
+                  <ul class="navigation__list-item-dropdown">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
                   </ul>
                 </li>
               </ul>
+              <div class="navigation__buttons">
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="navigation__buttons">
-          <a href="#">Login</a>
-          <a href="#">Sign Up</a>
+
+        <div class="navigation__burger">
+          <div class="navigation__burger-btn"></div>
         </div>
-        <span class="navigation__burger-btn"></span>
       </nav>
       <section class="call-to-action container">
         <h2 class="call-to-action__headline">A modern publishing platform</h2>
@@ -179,5 +208,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="javascript/main.js"></script>
   </body>
 </html>
