@@ -11,3 +11,13 @@ navToggle.addEventListener('click', () => {
     navToggle.setAttribute('aria-expanded', false);
   }
 });
+
+const navbarItems = document.querySelector('.navbar__menu-list').children;
+
+[...navbarItems].forEach((item) => {
+  item.addEventListener('click', () => {
+    document.querySelector('.active').classList.remove('active');
+
+    item.classList.add('active');
+  });
+});
