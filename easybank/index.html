@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easybank</title>
-    <link rel="stylesheet" href="sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +21,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar">
+      <nav class="navbar container">
         <div>
           <img src="assets/logo.svg" alt="easybank logo" class="navbar__logo" />
         </div>
@@ -24,8 +31,8 @@
         >
           <span class="sr-only" aria-expanded="false">Menu</span>
         </button>
-        <nav>
-          <ul id="navbar__menu" data-visible="false">
+        <div class="navbar-menu" data-visible="false">
+          <ul class="navbar__menu-list">
             <li class="active">
               <a href="#">Home</a>
             </li>
@@ -42,28 +49,39 @@
               <a href="#">Careers</a>
             </li>
           </ul>
-        </nav>
-        <a href="#" class="navbar__button">Request Invite</a>
+        </div>
+        <a href="#" class="navbar__button request-invite">Request Invite</a>
       </nav>
       <section class="hero">
-        <div class="hero__content">
+        <div class="hero__content container">
           <h2>Next generation digital banking</h2>
           <p>
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
-          <a href="#">Request Invite</a>
+          <a href="#" class="request-invite">Request Invite</a>
         </div>
-        <div id="hero-image">
-          <img class="hidden_mobile" src="assets/bg-intro-desktop.svg" />
-          <img class="hidden_desktop" src="assets/bg-intro-mobile.svg" />
+        <div id="hero-image" class="hero__image">
+          <img
+            class="hero__mockups-image"
+            src="assets/image-mockups.png"
+            alt="phones mockups with easybank interface"
+          />
+          <img
+            class="hero__background-image hidden_mobile"
+            src="assets/bg-intro-desktop.svg"
+          />
+          <img
+            class="hero__background-image hidden_desktop"
+            src="assets/bg-intro-mobile.svg"
+          />
         </div>
       </section>
     </header>
 
     <main class="main">
-      <section class="reinforcement">
+      <section class="reinforcement container">
         <h2>Why choose Easybank?</h2>
         <p>
           We leverage Open Banking to turn your bank account into your financial
@@ -107,10 +125,10 @@
           </div>
         </section>
       </section>
-      <section class="latest-articles">
+      <section class="latest-articles container">
         <h2>Latest Articles</h2>
         <section class="latest-articles__list">
-          <article>
+          <article class="latest-articles__list-item">
             <img src="assets/image-currency.jpg" alt="money bills" />
             <div>
               <span>By Claire Robinson</span>
@@ -121,7 +139,7 @@
               </p>
             </div>
           </article>
-          <article>
+          <article class="latest-articles__list-item">
             <img
               src="assets/image-restaurant.jpg"
               alt="fancy dish from a fancy restaurant lol"
@@ -135,22 +153,22 @@
               </p>
             </div>
           </article>
-          <article>
+          <article class="latest-articles__list-item">
             <img
               src="assets/image-plane.jpg"
               alt="window photo from a plane during sunrise... I think"
             />
             <div>
               <span>By Wilson Hutton</span>
-              <a href="#"
-                >Take your Easybank card wherever you go We want you to enjoy
-                your travels. This is why we don’t charge any fees on purchases
-                while you’re abroad. We’ll even show you …</a
-              >
-              <p></p>
+              <a href="#">Take your Easybank</a>
+              <p>
+                card wherever you go We want you to enjoy your travels. This is
+                why we don’t charge any fees on purchases while you’re abroad.
+                We’ll even show you …
+              </p>
             </div>
           </article>
-          <article>
+          <article class="latest-articles__list-item">
             <img src="assets/image-confetti.jpg" alt="confetti! YAY" />
             <div>
               <span>By Claire Robinson</span>
@@ -166,49 +184,59 @@
       </section>
     </main>
     <footer class="footer">
-      <div>
-        <div><img src="assets/logo.svg" alt="easybank logo" /></div>
-        <div class="footer__social-links">
-          <a href="#"
-            ><img src="assets/icon-facebook.svg" alt="facebook icon"
-          /></a>
-          <a href="#"
-            ><img src="assets/icon-youtube.svg" alt="youtube icon"
-          /></a>
-          <a href="#"
-            ><img src="assets/icon-twitter.svg" alt="twitter icon"
-          /></a>
-          <a href="#"
-            ><img src="assets/icon-pinterest.svg" alt="pinterest icon"
-          /></a>
-          <a href="#"
-            ><img src="assets/icon-instagram.svg" alt="instagram icon"
-          /></a>
+      <div class="container">
+        <div class="separator">
+          <div>
+            <div>
+              <img
+                class="footer__logo"
+                src="assets/logo-white.svg"
+                alt="easybank logo"
+              />
+            </div>
+            <div class="footer__social-links">
+              <a href="#"
+                ><img src="assets/icon-facebook.svg" alt="facebook icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/icon-youtube.svg" alt="youtube icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/icon-twitter.svg" alt="twitter icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/icon-pinterest.svg" alt="pinterest icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/icon-instagram.svg" alt="instagram icon"
+              /></a>
+            </div>
+          </div>
+          <nav class="footer__navbar">
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <a href="#" class="request-invite">Request Invite</a>
+          <span>© Easybank. All Rights Reserved</span>
         </div>
       </div>
-      <nav class="footer__navbar">
-        <ul>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Blog</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Support</a></li>
-          <li><a href="">Privacy Policy</a></li>
-        </ul>
-      </nav>
-      <div>
-        <a href="#">Request Invite</a>
-        <span>© Easybank. All Rights Reserved</span>
-      </div>
     </footer>
-    <div class="attribution">
+    <span class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Cristhian Benitez</a>.
-    </div>
-    <script src="js/index.js"></script>
+    </span>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
