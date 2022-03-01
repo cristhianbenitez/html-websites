@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [mysolution](https://www.frontendmentor.io/solutions/practice-of-bem-sass-and-semantic-html-C8Fl_SfCz)
-- Live Site URL: [mysolution](https://mystifying-torvalds-47dd80.netlify.app/)
+- Live Site URL: [mysolution](https://sunnyside-landingpage.surge.sh/)
 
 ## My process
 
