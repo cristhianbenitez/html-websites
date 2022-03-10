@@ -1,0 +1,112 @@
+/* ===========
+  Variables
+=========== */
+
+:root {
+  /* primary colors */
+  --clr-cyan: hsl(180, 66%, 49%);
+  --clr-light-cyan: hsla(179, 56%, 75%, 1);
+  --clr-dark-violet: hsl(257, 27%, 26%);
+  /* secondary colors */
+  --clr-red: hsl(0, 87%, 67%);
+  /* neutral colors */
+  --clr-gray: hsl(0, 0%, 75%);
+  --clr-grayish-violet: hsl(257, 7%, 63%);
+  --clr-very-dark-blue: hsl(255, 11%, 22%);
+  --clr-very-dark-violet: hsl(260, 8%, 14%);
+
+  /* fonts */
+  --ff-poppins: 'Poppins', sans-serif;
+  --fw-semibold: 500;
+  --fw-bold: 700;
+}
+
+/* ===========
+    General
+=========== */
+
+body {
+  font-size: 18px;
+  font-family: var(--ff-poppins);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===========
+  Utilities
+=========== */
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  /* exact distance of 167px */
+  padding-inline: 9.3em;
+}
+
+/* ===========
+    Typography
+=========== */
+/* Header */
+.navbar > ul {
+  font-weight: var(--fw-bold);
+  color: var(--clr-grayish-violet);
+  font-size: 0.84em;
+}
+.navbar__buttons > a {
+  font-weight: var(--fw-bold);
+  color: var(--clr-grayish-violet);
+  font-size: 0.9em;
+}
+.navbar__buttons > a:last-child {
+  background: var(--clr-cyan);
+  color: #ffff;
+}
+
+/* ===========
+    Layout
+=========== */
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 3.275em;
+  padding-bottom: 3.275em;
+}
+.navbar > ul {
+  display: flex;
+  gap: 1.2em;
+}
+.navbar__buttons {
+  display: flex;
+  gap: 4px;
+}
+.navbar__buttons > a {
+  padding: 0.725em 1.325em;
+  border-radius: 150px;
+}
+
+.get-started-btn {
+  display: inline-block;
+  background: var(--clr-cyan);
+  color: #ffff;
+  font-weight: 700;
+  padding: 1em 2.6em;
+  border-radius: 100px;
+  transition: background 0.5s ease-in-out;
+}
+
+.get-started-btn:hover,
+.get-started-btn:focus {
+  background: var(--clr-light-cyan);
+}
