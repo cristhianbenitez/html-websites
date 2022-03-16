@@ -28,7 +28,11 @@
   <body>
     <header class="header container">
       <nav class="navbar">
-        <img src="images/logo.svg" alt="this is shortly logo" />
+        <img
+          class="navbar__logo"
+          src="images/logo.svg"
+          alt="this is shortly logo"
+        />
         <ul>
           <li>Features</li>
           <li>Pricing</li>
@@ -43,7 +47,7 @@
     <main>
       <div class="container">
         <section class="call-to-action">
-          <div>
+          <div class="call-to-action__body">
             <h2 class="call-to-action__headline">
               More than just shorter links
             </h2>
@@ -51,14 +55,21 @@
               Build your brand’s recognition and get detailed insights on how
               your links are performing.
             </p>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a href="#" class="call-to-action__btn get-started-btn"
+              >Get Started</a
+            >
           </div>
+          <img
+            class="call-to-action__illustration"
+            src="images/illustration-working.svg"
+            alt="person working illustration"
+          />
         </section>
         <section class="url-shortener">
-          <div>
+          <div class="url-shortener__inner-wrapper">
             <input
               type="text"
-              class="url-shortner__input"
+              class="url-shortener__input"
               placeholder="Shorten a link here..."
             />
             <button type="submit" class="url-shortner__btn">Shorten It!</button>
